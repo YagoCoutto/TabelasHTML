@@ -10,15 +10,23 @@
             width: 500px;
             border-collapse: collapse;
         }
-        tr, td{
+        td, th{
             border: 1px solid black;
             padding: 5px;
         }
         tbody{
             background-color:aliceblue;
         }
-        tfoot{
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tfoot, thead{
             background-color: dimgray;
+            color: white;
         }
 
         td.num{
@@ -27,7 +35,7 @@
     </style>
 </head>
 <body>
-    <h1>Tabelas com Semântica</h1>
+    <h1>Tabelas</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
@@ -40,6 +48,7 @@
     -->
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <th>Estado</th>
             <th>População</th>
